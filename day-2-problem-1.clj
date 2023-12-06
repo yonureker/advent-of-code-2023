@@ -6,7 +6,7 @@
   (with-open [reader (io/reader file-path)]
     (doall (line-seq reader))))
 
-;; regex matches "15" || "14 red" || "14 green" || "13 red"
+;; regex matches 15 or higher || "14 red" || "14 green" || "13 red"
 (def pattern #"\b(?:1[5-9]|[2-9]\d+|14\sred|14\sgreen|13\sred)\b")
 
 ;; regex to search for numbers
