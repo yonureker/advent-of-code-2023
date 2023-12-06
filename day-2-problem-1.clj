@@ -10,6 +10,7 @@
 (def pattern #"\b(?:1[5-9]|[2-9]\d+|14\sred|14\sgreen|13\sred)\b")
 
 ;; regex to search for numbers
+;; used for getting e.g. "11" from "Game 11"
 (def pattern2 #"\d+")
 
 (->> (read-file-lines "advent.txt")                ;; read file by line
